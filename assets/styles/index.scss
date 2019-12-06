@@ -1,0 +1,426 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$blue: #94C2ED;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+// .input-message {
+//   border: 2px solid #dedede;
+//   background-color: #f1f1f1;
+//   border-radius: 5px;
+//   padding: 10px;
+//   margin: 10px 0;
+// }
+
+.user-settings {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: $blue;
+  &:hover {
+  color: #fff;
+  background: $blue;
+  }
+}
+
+
+
+.goback {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: $blue;
+  &:hover {
+  color: #fff;
+  background: $blue;
+  }
+}
+
+.changePasswordSection input {
+  margin-top: 5px;
+  width: 250px;
+  height: 40px;
+}
+
+h2 {
+  color: $blue;
+}
+/* change password button*/
+
+.change-button {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: $blue;
+  &:hover {
+  color: #fff;
+  background: $blue;
+  }
+}
+
+.changePasswordSection {
+  width: 315px;
+  margin-left: 60rem;
+  background-color: #F2F5F8;
+  padding: 30px;
+  padding-right: .6px;
+  border-radius: 10px;
+}
+
+.change-Password-Section {
+  display: flex;
+  justify-content: center;
+}
+
+/* sign-out button*/
+.out-button {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: $blue;
+  &:hover {
+  color: #fff;
+  background: $blue;
+  }
+  }
+
+  .messages {
+      // padding: 30px 30px 20px;
+      border-bottom: 2px solid white;
+      overflow-y: scroll;
+      height: 575px;
+  }
+
+
+  .msg {
+    margin: 15px auto;
+    line-height: 26px;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
+    border-radius: 7px;
+    background: $blue;
+    // width: 90%;
+    // max-width: 800px;
+  }
+
+.textarea {
+      width: 100%;
+      border: none;
+      padding: 10px 20px;
+      font: 14px/22px "Lato", Arial, sans-serif;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      resize: none;
+      align-self: center;
+}
+
+.text-Wrapper {
+  padding: 30px;
+  width: 490px;
+  float: center;
+  background: #F2F5F8;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #434651;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.message-button {
+      color: $blue;
+      border-radius: 5px;
+      font-size: 18px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      background: #F2F5F8;
+      margin-left: 50px;
+      &:hover {
+      color: darken($blue, 12%);
+      }
+}
+
+p {
+  color: #fff;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1px;
+  // margin-top: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: $blue;
+  &:hover {
+    color: darken($blue, 12%);
+  }
+}
+
+.update-button {
+  border-radius: 5px;
+  background: #fff;
+  color: $blue;
+  &:hover {
+    color: darken($blue, 12%);
+  }
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+  font: 14px/20px "Lato", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signInSection {
+  max-width: 99.5rem;
+  margin: 3rem auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+.change-Password-Section {
+  width: 100%;
+  max-width: 93.5rem;
+  margin: 3rem auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.signUpSection {
+  max-width: 99.5rem;
+  margin: 3rem auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper > .signInSection {
+  display: flex;
+  padding: 0 8rem;
+}
+
+.wrapper > .signUpSection {
+  display: flex;
+  padding: 0 8rem;
+}
+
+.phone-app {
+  height: 68.9rem;
+  width: 400px;
+  /* background: url("images/mobileapp.png") center no-repeat; */
+  flex: 1;
+  align-self: center;
+  position: relative;
+  z-index: 10;
+  margin-right: 4rem;
+}
+
+.mobile-phone {
+  display: none;
+}
+
+.form-data {
+  width: 100%;
+  max-width: 35rem;
+  margin-top: 10rem;
+}
+
+.form-data form {
+  background-color: #fff;
+  border: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.logo img {
+  width: 17.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.form-data form input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #eee;
+  border-radius: 0.4rem;
+}
+
+.form-btn {
+  margin: 1rem 0 1.5rem;
+  height: 3rem;
+  background-color: #3897f0;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.has-separator {
+  font-size: 1.3rem;
+  color: #999999;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.has-separator::after,
+.has-separator::before {
+  content: '';
+  position: absolute;
+  background-color: #eee;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.has-separator::before {
+  width: 40%;
+  left: 0;
+}
+
+.has-separator::after {
+  width: 40%;
+  right: 0;
+}
+
+.facebook-login {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #385185;
+  margin-bottom: 2.5rem;
+}
+
+#user-typing{
+  color: black;
+}
+
+.enterJoshMessage {
+  width: 50%;
+}
+
+.facebook-login i {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+}
+
+.password-reset {
+  font-size: 1.2rem;
+  color: #003569;
+}
+
+.sign-up-show {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #262626;
+  padding: 2rem 0;
+  background-color: #fff;
+  border: 2px solid #eee;
+  margin: 1rem 0;
+}
+
+.sign-up-show a {
+  color: #3897f0;
+  font-weight: bold;
+}
+
+.animation-effect {
+  background: linear-gradient(-45deg, #D4D4D4, #FBFAF8, #778BA5, #FFFFFF);
+  width: 100%;
+  height: 100vh;
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.animation-effect {
+  background: linear-gradient(-45deg, #D4D4D4, #FBFAF8, #778BA5, #FFFFFF);
+  width: 100%;
+  height: 100vh;
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+.phone-app2{
+  flex: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .phone-app {
+    display: none;
+  }
+
+  .mobile-phone {
+    display: hidden;
+    height: 68.9rem;
+    width: 450px;
+    flex: 1;
+    align-self: center;
+    position: relative;
+    z-index: 10;
+    margin-right: 4rem;
+  }
+}
